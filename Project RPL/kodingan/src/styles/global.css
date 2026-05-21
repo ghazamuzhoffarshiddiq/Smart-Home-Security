@@ -1,0 +1,23 @@
+/* styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(217, 119, 6, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #d97706; 
+}
+
+.hero-pattern {
+    background-color: #064e3b;
+    background-image: radial-gradient(#d97706 1px, transparent 1px);
+    background-size: 30px 30px;
+}
